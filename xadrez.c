@@ -1,4 +1,4 @@
-//Desafio Novato - Movimentação de peças de xadrez
+//Desafio Aventureiro - Movimentação de peças de xadrez
 
 #include <stdio.h>
 
@@ -35,6 +35,18 @@ int main() {
         printf("%d Esquerda\n", casas + 1);
         casas++;
     } while (casas < casasRainha);
+
+    // Adicionando a lógica para movimentação do Cavalo
+    printf("\nMovimento do Cavalo:\n");
+    int movimentosCavalo = 2;
+    for (casas = 0; casas < movimentosCavalo; casas++) {
+        printf("%d Baixo\n",casas +1);
+    }
+    casas = 0;
+    while (casas < 1) {
+        printf("%d Esquerda\n", casas + 1);
+        casas++;
+    }
 
     return 0;
 }
